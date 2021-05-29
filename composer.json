@@ -1,0 +1,30 @@
+{
+    "name": "danidoble/translation",
+    "description": "translate with json file",
+    "type": "plugin",
+    "keywords": [
+        "danidoble",
+        "translation"
+    ],
+    "authors": [
+        {
+            "name": "danidoble",
+            "email": "dani.doble.d@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "files": [ "src/Global.php" ],
+        "psr-4": {
+            "Danidoble\\Translation\\": "src\\"
+        },
+        "exclude-from-classmap": [
+            "/test/"
+        ]
+    },
+    "version": "v0.0.1"
+}
