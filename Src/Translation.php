@@ -1,7 +1,13 @@
 <?php
+/*
+ * Created by (c)danidoble 2021.
+ */
 
 namespace Danidoble\Translation;
-
+/**
+ * Class Translation
+ * @package Danidoble\Translation
+ */
 class Translation
 {
     /**
@@ -28,6 +34,24 @@ class Translation
             return !isset(__dd_lang[$key]) ? $key : __dd_lang[$key];
         }
         return $key;
+    }
+
+    /**
+     * @param $dir
+     * @param string $name
+     * @return bool
+     */
+    public function cpEsExampleFile($dir, string $name="es"): bool
+    {
+        $dir = realpath($dir);
+        if(is_dir($dir)){
+            $dir .= '/'.$name.'.json';
+            $json_file = realpath(__DIR__.'/../Tests/es.json');
+            if(copy($json_file,$dir)){
+                return true;
+            }
+        }
+        return false;
     }
 
 }

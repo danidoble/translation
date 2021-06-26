@@ -76,3 +76,17 @@ use \Danidoble\Translation\Translation as tr;
 
 echo tr::__('hello');
 ```
+
+# copy example file << cpEsExampleFile >>
+
+```
+<?php
+// include composer autoload to your project 
+include __DIR__ . '/vendor/autoload.php'
+
+// Instantiate Translation class
+$translator = new \Danidoble\Translation\Translation();
+
+//return true if the copy has been success, otherwise return false
+var_dump($translator->cpEsExampleFile(__DIR__.'/../Src/'));
+```

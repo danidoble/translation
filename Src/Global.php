@@ -1,4 +1,7 @@
 <?php
+/*
+ * Created by (c)danidoble 2021.
+ */
 /**
  * if this function already exist, cannot be used so if you want use this package use instantiation method
  * Ex.
@@ -7,6 +10,7 @@
  */
 if(!function_exists('__')){
     /**
+     * Use this function to translate
      * @param string $key
      * @return string
      */

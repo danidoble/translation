@@ -1,5 +1,0 @@
-{
-  "hello from global function": "hola desde la funcion global",
-  "hello from namespace": "hola desde el namespace",
-  "hello from rename namespace class": "hola desde la clase namespace renombrada"
-}
